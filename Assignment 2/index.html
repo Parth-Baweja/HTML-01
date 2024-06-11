@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- header section: nav bar and logo -->
     <header>
         <div class="logo_container">
             <a href="index.html">
@@ -34,11 +35,13 @@
             </menu>
         </nav>
     </header>
+    <!-- mast-head section: for title -->
     <section class="mastHead">
         <h1>Bring the best pizza for you to life!!!</h1>
     </section>
     <main>
         <section class="form-container">
+            <!-- form contains: crust choice, sauce choice, toppings choice, special instructions submit button  -->
             <form action="somephpfile" method="get" enctype="multipart/form-data">
 
                 <h2>PIZZA BUILDER</h2>
@@ -99,7 +102,10 @@
                         <label for="pineapple">Pineapple</label>
                         <input type="checkbox" id="spinach" name="topping" value="spinach">
                         <label for="spinach">Spinach</label>
+
+                        <!-- sauce and crust choice is non-optional -->
                     </div>
+                    
                 </fieldset>
                 
 
@@ -108,26 +114,15 @@
 
                 <input type="submit" value="Go to Check-Out">
 
-                <!-- <h2 id="confirmation">
-
-                </h2> -->
 
             </form>
 
-            <!DOCTYPE html>
-            <html lang="en">
-
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="./css/style.css">
-                <title>Custom Radio Buttons</title>
-            </head>
 
         </section>
 
         <section class="order-confirmation">
             <h2>Order Confirmation</h2>
+            <!-- form contains: email prompt, shipping address, payment option, checkout button -->
             <form action="submit-order.php" method="post" enctype="multipart/form-data">
 
                 <label for="email">Email:</label>
@@ -151,9 +146,9 @@
             </form>
         </section>
     </main>
-
+    <!-- footer section: Copyright info -->
     <footer>
-        <p>All rights reserved by Parth Baweja &copy;</p>
+        <p>All rights reserved by Parth Baweja &copy;</p>  
     </footer>
 </body>
 
