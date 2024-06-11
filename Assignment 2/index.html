@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a pizza order online page">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <title>Pizza Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="Logo Image" class="logo">
+            </a>
+        </div>
+        <nav>
+            <menu class="navBar">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </menu>
+        </nav>
+    </header>
+    <section class="mastHead">
+        <h1>Bring the best pizza for you to life!!!</h1>
+    </section>
+    <main>
+        <section class="form-container">
+            <form action="somephpfile" method="get" enctype="multipart/form-data">
+
+                <h2>PIZZA BUILDER</h2>
+
+                <label for="pizzaNum">Number of pizzas: </label>
+                <p><input type="number" id="pizzaNum" name="pizzaNum" min="1" max="15"></p>
+
+                <label for="size">Choose a size:</label>
+                <select id="size" name="size">
+                    <option value="">~Select Pizza Size~</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+
+                <fieldset class="radio-choice">
+                    <legend>Choose your crust:</legend>
+                    <input type="radio" id="thin" name="crust" value="thin">
+                    <label for="thin" class="radio-label">Thin</label><br>
+                    <input type="radio" id="thick" name="crust" value="thick">
+                    <label for="thick" class="radio-label">Thick</label><br>
+                    <input type="radio" id="stuffed" name="crust" value="stuffed">
+                    <label for="stuffed" class="radio-label">Stuffed</label>
+                </fieldset>
+
+                <fieldset class="radio-choice">
+                    <legend>Choose your sauce:</legend>
+                    <input type="radio" id="authentic" name="sauce" value="authentic pizza sauce">
+                    <label for="authentic" class="radio-label">Authentic Pizza Sauce </label><br>
+                    <input type="radio" id="nashville" name="sauce" value="nashville sauce">
+                    <label for="nashville" class="radio-label">Nashville Sauce</label><br>
+                    <input type="radio" id="tandoori" name="sauce" value="tandoori sauce">
+                    <label for="tandoori" class="radio-label">Tandoori Sauce</label>
+                </fieldset>
+
+
+                <fieldset class="checkbox-choice">
+                    <legend>Choose your toppings:</legend>
+                    <div class="grid-container">
+                        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                        <input type="checkbox" id="onions" name="topping" value="onions">
+                        <label for="onions">Onions</label>
+                        <input type="checkbox" id="sausage" name="topping" value="sausage">
+                        <label for="sausage">Sausage</label>
+                        <input type="checkbox" id="bacon" name="topping" value="bacon">
+                        <label for="bacon">Bacon</label>
+                        <input type="checkbox" id="extra_cheese" name="topping" value="extra_cheese">
+                        <label for="extra_cheese">Extra Cheese</label>
+                        <input type="checkbox" id="black_olives" name="topping" value="black_olives">
+                        <label for="black_olives">Black Olives</label>
+                        <input type="checkbox" id="green_peppers" name="topping" value="green_peppers">
+                        <label for="green_peppers">Green Peppers</label>
+                        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" id="spinach" name="topping" value="spinach">
+                        <label for="spinach">Spinach</label>
+                    </div>
+                </fieldset>
+                
+
+                <textarea name="special" id="instructions"
+                    placeholder="Any special instructions...(optional)"></textarea>
+
+                <input type="submit" value="Go to Check-Out">
+
+                <!-- <h2 id="confirmation">
+
+                </h2> -->
+
+            </form>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="./css/style.css">
+                <title>Custom Radio Buttons</title>
+            </head>
+
+        </section>
+
+        <section class="order-confirmation">
+            <h2>Order Confirmation</h2>
+            <form action="submit-order.php" method="post" enctype="multipart/form-data">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="shippingAddress">Shipping Address:</label>
+                <textarea id="shippingAddress" name="shippingAddress" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">~Select payment method~</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash_on_delivery">Cash on Delivery</option>
+                </select>
+
+                <input type="submit" value="Confirm Order">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved by Parth Baweja &copy;</p>
+    </footer>
+</body>
+
+</html>
