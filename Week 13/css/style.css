@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-color: #125784;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Ensure space between logo, nav-links, and search bar */
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav > img {
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the nav-links horizontally */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push search bar to the right */
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.background-img {
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center; 
+   
+}
+
+.text {
+    position: absolute;
+    left: 22%;
+    bottom: 40%;
+    color: white;
+    font-size: 50px;  
+}
+
+.content {
+    background-color: #f57f17;
+    color: white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px; 
+}
+
+.content-text {
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+
+.content-images img {
+    width: 300px; 
+    height: auto;
+}
+
+.additional-images{
+    display: flex;
+}
+.additional-images img{
+    flex-grow:1;
+    width: 100px;
+}
+
+.form-section {
+    background-color: #5e35b1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    margin: 0 auto;
+    max-width: 300px; /* Set a max-width for centering */
+}
+
+.form-section input, .form-section textarea {
+    width: 100%; /* Make the input boxes full width of the form */
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-section button {
+    width: 100%; /* Make the button full width of the form */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: #5e35b1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-section .radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Align with other input elements */
+    margin-top: 10px;
+}
+
+.form-section .radio-group label {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-section .radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: auto;
+    margin-right: 150px; 
+}
+
+.footer-text {
+    flex: 1;
+}
