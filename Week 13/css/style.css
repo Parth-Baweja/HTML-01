@@ -7,7 +7,332 @@
     background-color: #125784;
     display: flex;
     align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Ensure space between logo, nav-links, and search bar Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation bar styling */
+.nav {
+    background-color: #125784;
+    display: flex;
+    align-items: center; /* Vertically center the content */
     justify-content: space-between; /* Ensure space between logo, nav-links, and search bar */
+    padding: 10px 15px;
+    position: relative;
+}
+
+/* Logo within navigation bar */
+.nav > img {
+    height: 70px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the nav-links horizontally */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+/* Styling for links within the navigation */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Search bar within the navigation */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push search bar to the right */
+}
+
+/* Search bar input field */
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Search bar button */
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Background image for main section */
+.background-img {
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center; 
+}
+
+/* Text overlay on the background image */
+.text {
+    position: absolute;
+    left: 22%;
+    bottom: 40%;
+    color: white;
+    font-size: 50px;  
+}
+
+/* Content section styling */
+.content {
+    background-color: #f57f17;
+    color: white;
+}
+
+/* Grid layout for content section */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Padding for the content text */
+.content-text {
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+
+/* Image styling in content section */
+.content-images img {
+    width: 300px; 
+    height: auto;
+}
+
+/* Additional images section styling */
+.additional-images {
+    display: flex;
+}
+
+/* Styling for images within additional images section */
+.additional-images img {
+    flex-grow: 1;
+    width: 100px;
+}
+
+/* Form section styling */
+.form-section {
+    background-color: #5e35b1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for form within the form section */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    margin: 0 auto;
+    max-width: 300px; /* Set a max-width for centering */
+}
+
+/* Input and textarea styling within the form */
+.form-section input, .form-section textarea {
+    width: 100%; /* Make the input boxes full width of the form */
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button styling within the form */
+.form-section button {
+    width: 100%; /* Make the button full width of the form */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: #5e35b1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Radio button group styling within the form */
+.form-section .radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Align with other input elements */
+    margin-top: 10px;
+}
+
+/* Label styling for radio buttons */
+.form-section .radio-group label {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* Styling for radio input within the form */
+.form-section .radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Footer section styling */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+}
+
+/* Footer content styling */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer logo styling */
+.footer-logo img {
+    height: 70px;
+    width: auto;
+    margin-right: 150px; 
+}
+
+/* Footer text styling */
+.footer-text {
+    flex: 1;
+}
+
+/* Header container styling */
+#header-container {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #125784;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header logo styling */
+#header-logo > img {
+    padding: 5px;
+    height: 55px;
+    width: auto;
+}
+
+/* Menu styling */
+#menu > menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for menu items */
+#menu > menu > li {
+    border-right: 2px solid white;
+    padding: 0 15px 0 15px;
+    color: white;
+    list-style: none;
+}
+
+/* Remove border for the last menu item */
+#menu li + li + li {
+    border-color: transparent;
+}
+
+/* Search bar styling in the header */
+#header-search {
+    padding: 10px;
+}
+
+/* Placeholder styling for the search bar */
+#header-search ::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer container styling */
+#footer-container {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Footer logo styling */
+#footer-logo > img {
+    padding: 5px;
+    height: auto;
+    width: 100px;
+}
+
+/* Footer description styling */
+#footer-description {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer title and description text styling */
+#footer-description > h2, p {
+    margin: 5px 0 10px 20px;
+    color: white;
+    display: inline-block;
+}
+
+/* Responsive styling for footer */
+@media screen and (max-width: 768px) {
+    #footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footer-logo, #footer-description {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    #footer-logo > img {
+        justify-content: space-around;
+    }
+}
+
+/* Responsive styling for header */
+@media screen and (max-width: 768px) {
+    #header-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+    }
+    #header-logo, #menu, #header-search {
+        padding: 10px 0 10px 0 !important;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    #menu > menu > li {
+        border: 0;
+    }
+    #menu > menu {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
     padding: 10px 15px;
     position: relative;
 }
