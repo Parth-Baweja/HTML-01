@@ -175,3 +175,108 @@ footer {
 .footer-text {
     flex: 1;
 }
+
+
+#header-container{
+position: relative;
+top: 0;
+display: flex;
+flex-direction:row ;
+flex-wrap: wrap;
+background-color: #125784;
+align-items: center;
+justify-content: space-between;
+}
+#header-logo>img{
+    padding: 5px;
+    height: 55px;
+    width: auto;
+}
+#menu>menu{
+    display: flex;
+    flex-direction: row;
+}
+#menu>menu>li{
+    border-right: 2px solid white;
+    padding: 0 15px 0 15px;
+    color: white;
+    list-style: none;
+
+}
+#menu li+li+li{
+    border-color: transparent;
+}
+#header-search{
+padding: 10px;
+}
+#header-search ::placeholder{
+color: black;
+font-weight: bold;
+}
+
+#footer-container{
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    }
+    #footer-logo>img{
+        padding: 5px;
+        height: auto;
+
+        width: 100px;
+    }
+    #footer-description{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #footer-description>h2,p{
+        margin: 5px 0 10px 20px;
+        color: white;
+        display: inline-block;
+    }
+
+    @media screen and (max-width: 768px) {
+        #footer-container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        #footer-logo, #footer-description {
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+        #footer-logo>img{
+            justify-content: space-around;
+        }
+    } 
+    @media screen and (max-width: 768px) {
+        #header-container {
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        #header-logo, #menu ,#header-search{
+            padding: 10px 0 10px 0!important;
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+        #menu>menu>li{
+            border: 0;
+        }
+        #menu>menu{
+            text-align: center;
+            justify-content: center;
+            padding: 0;
+
+        }
+       
+    } 
+
